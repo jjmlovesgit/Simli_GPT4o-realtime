@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=Vi-jybt-KTg
+
 # Avatar Interaction using OpenAI's Realtime API and Simli Avatar API
 
 This fork utilizes [OpenAI's Realtime API](https://platform.openai.com/docs/guides/realtime) in combination with the [Simli Avatar API](https://simli.com/) to enable avatar interaction. While still in development, it essentially facilitates video agent conversations.
