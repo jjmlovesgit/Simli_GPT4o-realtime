@@ -1,0 +1,243 @@
+[data-component='ConsolePage'] {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0px 8px;
+
+  & > div {
+    flex-shrink: 0;
+  }
+
+  .content-avatar-body {
+    padding-top: 20px; /* Add top padding to the container */
+  }
+
+  .content-avatar-body video {
+    width: 100%; /* Or set a specific width */
+    height: auto;
+    border-radius: 10px; /* This will make the video circular */
+    overflow: hidden;
+  }
+
+  .content-top {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    min-height: 40px;
+
+    .content-title {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .content-main {
+    flex-grow: 1;
+    flex-shrink: 1 !important;
+    display: flex;
+    flex-direction: column; /* Changed to column to center avatar above conversation */
+    align-items: center; /* Centers elements horizontally */
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+
+
+    /* Set maximum width and height */
+    max-width: 1200px; /* Adjust as needed */
+    max-height: 100vh; /* Limit the height */
+    width: 100%; /* Ensure it takes full width up to the max */
+    }
+
+    .content-avatar {
+      margin-bottom: 20px; /* Adds spacing between the avatar and conversation */
+      text-align: center;
+
+      video {
+        max-width: 300px; /* Set a max width for the avatar video */
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .content-block-body {
+      display: flex;             /* Enable flexbox */
+      flex-direction: column;    /* Stack children vertically */
+      justify-content: flex-start;/* Align items to the top */
+      align-items: flex-start;    /* Align items to the left */
+      text-align: left;          /* Align text to the left */
+      height: 35vh;              /* Set a height to limit growth */
+      overflow-y: auto;          /* Enable scrolling if content overflows */
+      margin: 20px 0;           /* Optional: add some margin */
+    }
+
+    .content-block.conversation {
+      width: 100%; /* Full width */
+      max-width: 800px; /* Set a max width for the conversation block */
+      margin: 0 auto; /* Center the conversation block */
+      max-height: 70vh; /* Set a maximum height */
+      overflow: hidden;
+      margin-bottom: 16px; /* Adjust for padding */
+      border-top: 1px solid #e7e7e7;
+    }
+
+    .content-block {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      max-height: 100%;
+      width: 100%;
+
+      .content-block-title {
+        flex-shrink: 0;
+        padding-top: 16px;
+        padding-bottom: 4px;
+        position: relative;
+      }
+
+      .content-block-body {
+        color: #6e6e7f;
+        position: relative;
+        flex-grow: 1;
+        padding: 8px 0px;
+        padding-top: 4px;
+        line-height: 1.2em;
+        overflow: auto;
+
+        &.full {
+          padding: 0px;
+        }
+      }
+    }
+
+    .content-logs {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      & > div {
+        flex-grow: 1;
+      }
+
+      & > .content-actions {
+        display: flex; /* Enable flexbox */
+        justify-content: space-between; /* Align buttons to the sides */
+        width: 100%; /* Full width for alignment */
+        margin-top: 20px; /* Optional: Add some space above the button */
+      }
+    }
+  }
+
+  .conversation-item {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-direction: column;    /* Stack items vertically */
+    align-items: flex-start;   /* Left align the items */
+
+    &:not(:hover) .close {
+      display: none;
+    }
+
+    .close {
+      position: absolute;
+      top: 0px;
+      right: -20px;
+      background: #aaa;
+      color: #fff;
+      display: flex;
+      border-radius: 16px;
+      padding: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background: #696969;
+      }
+
+      svg {
+        stroke-width: 3;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .speaker {
+      position: relative;
+      text-align: left; /* Ensure text is left-aligned */
+      gap: 16px;
+      width: auto; /* Set width to auto to allow for variable text */
+      flex-shrink: 0;
+      margin-right: 16px;
+      font-weight: bold; /* Make the speaker text bold */
+
+      &.user {
+        color: #0099ff;
+      }
+
+      &.assistant {
+        color: #009900;
+      }
+    }
+
+    .speaker-content {
+      color: #18181b;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+  }
+
+  .content-logs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
+    & > div {
+      flex-grow: 1;
+    }
+  
+    & > .content-actions {
+      display: flex; /* Enable flexbox */
+      justify-content: space-between; /* Align buttons to the sides */
+      width: 100%; /* Full width for alignment */
+      margin-top: 20px; /* Optional: Add some space above the buttons */
+    }
+  }
+  
+  .button-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Center items vertically if needed */
+    gap: 20px; /* Optional: Add space between buttons */
+  }
+  
+  .button-container button {
+    background-color: #d3d3d3; /* Light grey background */
+    color: #000; /* Black text */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better touch area */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size for visibility */
+    transition: background-color 0.3s; /* Smooth background transition on hover */
+    min-width: 120px; /* Minimum width for consistency */
+  }
+  
+  .button-container button:hover {
+    background-color: #a9a9a9; /* Darker grey on hover */
+  }
+  
