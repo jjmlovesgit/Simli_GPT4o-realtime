@@ -55,6 +55,9 @@ Add your OpenAI and Simli API keys to the .env file:
 ```bash
 REACT_APP_OPENAI_API_KEY=your_openai_api_key
 REACT_APP_SIMLI_API_KEY=your_simli_api_key
+REACT_APP_VOICE=your_openai_api_Voice
+REACT_APP_SIMLI_FACE_ID=your_simli_face_id
+
 ```
 
 Replace your_openai_api_key and your_simli_api_key with your actual API keys.
@@ -63,12 +66,13 @@ Note: Keep your API keys secure and do not commit the .env file to version contr
 ## Usage
 
 Start the Application
-bashCopynpm start
+npm run build
+npm run start
 The application will run on http://localhost:3000.
 Interact with the Assistant
 
 Connect: Click on the Connect button to establish a connection.
-Push to Talk: Use the Push to Talk button to start speaking to the assistant.
+Push to Talk: Use the Push to Talk (Hold while speaking) button to start speaking to the assistant.
 View Avatar: The Simli avatar will appear, representing the AI assistant.
 Use Tools: Try out tools like get_weather() and set_memory() within the conversation.
 "# Simli_GPT4o-realtime" 
