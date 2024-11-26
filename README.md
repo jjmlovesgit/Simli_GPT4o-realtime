@@ -78,3 +78,6 @@ Push to Talk: Use the Push to Talk (Hold while speaking) button to start speakin
 View Avatar: The Simli avatar will appear, representing the AI assistant.
 Use Tools: Try out tools like get_weather() and set_memory() within the conversation.
 "# Simli_GPT4o-realtime" 
+
+## Prompt
+Be sure to change the prommpt to suit your needs:  src/utils/conversation_config.js
