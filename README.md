@@ -59,8 +59,6 @@ Add your OpenAI and Simli API keys to the .env file:
 ```bash
 REACT_APP_OPENAI_API_KEY=your_openai_api_key
 REACT_APP_SIMLI_API_KEY=your_simli_api_key
-REACT_APP_VOICE=your_openai_api_Voice
-REACT_APP_SIMLI_FACE_ID=your_simli_face_id
 
 ```
 
