@@ -1,6 +1,6 @@
 [https://www.youtube.com/watch?v=Vi-jybt-KTg](https://youtu.be/3XdNrEHod4w)
 ![image](https://github.com/user-attachments/assets/1caf9439-f5e9-49f0-8c69-aac8b47e156a)
-
+[https://www.youtube.com/watch?v=Vi-jybt-KTg](https://youtu.be/3XdNrEHod4w)
 
 # Avatar Interaction using OpenAI's Realtime API and Simli Avatar API
 
